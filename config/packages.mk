@@ -72,6 +72,13 @@ endif
 PRODUCT_PACKAGES += \
     ShapeShiftThemesStub
 
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStileCircleTrim \
+    QStileDefault \
+    QStileDualToneCircle \
+    QStileSquircleTrim
+
 # Charger images
 PRODUCT_PACKAGES += \
     charger_res_images
