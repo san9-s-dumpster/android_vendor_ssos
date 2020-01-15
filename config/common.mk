@@ -57,6 +57,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     vendor/ssos/config/backup.xml:system/etc/sysconfig/backup.xml
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/ssos/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
+
 # ShapeShiftOS-specific component overrides
 PRODUCT_COPY_FILES += \
     vendor/ssos/config/component-overrides.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides.xml
