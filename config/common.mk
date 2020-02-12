@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/ssos/overlay
 
+# Inherit from audio config
+$(call inherit-product, vendor/ssos/config/audio.mk)
+
 # Inherit from fonts config
 $(call inherit-product, vendor/ssos/config/fonts.mk)
 
