@@ -66,6 +66,9 @@ $(call inherit-product, vendor/ssos/config/audio.mk)
 # Inherit from fonts config
 $(call inherit-product, vendor/ssos/config/fonts.mk)
 
+# Inherit from packages config
+$(call inherit-product, vendor/ssos/config/packages.mk)
+
 # Inherit from our versioning
 $(call inherit-product, vendor/ssos/config/versioning.mk)
 
