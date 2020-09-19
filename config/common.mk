@@ -57,6 +57,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/ssos/overlay
 
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Inherit from apex config
 $(call inherit-product, vendor/ssos/config/apex.mk)
 
