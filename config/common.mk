@@ -57,8 +57,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/ssos/overlay
 
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
 # Inherit from apex config
 $(call inherit-product, vendor/ssos/config/apex.mk)
 
@@ -67,9 +65,6 @@ $(call inherit-product, vendor/ssos/config/audio.mk)
 
 # Inherit from fonts config
 $(call inherit-product, vendor/ssos/config/fonts.mk)
-
-# Inherit from packages config
-$(call inherit-product, vendor/ssos/config/packages.mk)
 
 # Inherit from rro_overlays config
 $(call inherit-product, vendor/ssos/config/rro_overlays.mk)
