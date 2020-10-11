@@ -48,10 +48,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
-# Boot Animation
-PRODUCT_COPY_FILES += \
-    vendor/ssos/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-
 # Blur properties
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.blurs_are_expensive=1 \
@@ -111,6 +107,9 @@ $(call inherit-product, vendor/ssos/config/fonts.mk)
 
 # Inherit from packages config
 $(call inherit-product, vendor/ssos/config/packages.mk)
+
+# Inherit from bootanimation config
+$(call inherit-product, vendor/ssos/config/bootanimation.mk)
 
 # Inherit from rro_overlays config
 $(call inherit-product, vendor/ssos/config/rro_overlays.mk)
