@@ -106,6 +106,9 @@ $(call inherit-product, vendor/ssos/config/apex.mk)
 # Inherit from audio config
 $(call inherit-product, vendor/ssos/config/audio.mk)
 
+# Inherit from accents config
+$(call inherit-product, vendor/ssos/config/accents.mk)
+
 # Inherit from fonts config
 $(call inherit-product, vendor/ssos/config/fonts.mk)
 
