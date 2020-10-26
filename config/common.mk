@@ -121,6 +121,9 @@ $(call inherit-product, vendor/ssos/config/bootanimation.mk)
 # Inherit from rro_overlays config
 $(call inherit-product, vendor/ssos/config/rro_overlays.mk)
 
+# Inherit from sepolicy config
+$(call inherit-product, vendor/ssos/config/sepolicy.mk)
+
 # Inherit from our versioning
 $(call inherit-product, vendor/ssos/config/versioning.mk)
 
