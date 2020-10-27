@@ -27,4 +27,4 @@ PRODUCT_PACKAGES += \
     IconPackFilledPixelThemePickerOverlay \
     IconPackRoundedPixelLauncherOverlay \
     IconPackRoundedPixelThemePickerOverlay \
-    PixelSetupWizardOverlayDerp
+    PixelSetupWizardOverlaySsos
